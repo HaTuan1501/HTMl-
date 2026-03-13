@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords"content="HTMl,CSS,javascrip">
+        <meta name="description"content="Hoc HTMl and CSS">
+        <meta name="author"content="Ha Anh Tuan">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Website login</title>
+        <!--Link connection with style.css-->
+        <link rel="stylesheet" href="style.css">
+       <style> 
+       ::placeholder {color: #9ca3af;}  
+    </style>
+    </head>
+<body>
+    <!--method gui du lieu den sever, action noi du lieu se dc gui toi-->
+   <div class="container">
+     <form class="card" method="get" action="bt2.html" target="_self"><!---->
+        <div>
+            <h2 >LOG IN</h2>
+        </div>
+        <div>
+            <label class="log"for="name">Full Name</label>
+           <br> <input type="text" id="name"  name="fullname" placeholder="Last Name and First Name" required>
+        </div>
+        <div>
+            <label class="log"for="pass">PassWord</label><br>
+            <input type="password" id="pass" name="password" placeholder="Password" required>
+        </div>
+        <br>
+        <div>
+            <button type="submit" class="button"> Log In</button>
+        </div>
+        <p class="note">Note:Please enter the correct password.</p>
+        </form>
+    </div>
+</body>
+    </html>
