@@ -26,5 +26,6 @@ alert("Đang tìm: " + search.value);
 }
 
 });
+window.alert('Chào Mừng Đến Với Thế Giới Coder')
 
 
