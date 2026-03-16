@@ -1,0 +1,207 @@
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(45deg,#0099ff,#00cc99);
+color:white;
+text-align:center;
+padding:20px;
+position:relative; /* Đặt header ở vị trí tương đối để logo có thể được đặt tuyệt đối bên trong nó */
+}
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+.logo{
+   position: absolute;/* Đặt logo ở vị trí tuyệt đối để nó không ảnh hưởng đến bố cục của header */
+   width: 70px;
+   height: 70px;
+   top:15px;
+left:15px;
+}
+.logo img{
+width:70px;
+height:70px;
+border-radius:50%;/* Cắt ảnh thành hình tròn */
+object-fit:cover; /* Đảm bảo ảnh không bị méo khi cắt thành hình tròn */
+}
+
+header h1{
+font-size:40px;
+}
+
+/* MENU */
+
+nav{
+background:#333;
+padding:15px;
+text-align:center;
+position:sticky;
+top:100px;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-size:18px;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+/* SEARCH */
+
+.search{
+text-align:center;
+margin:20px;
+}
+
+.search input{
+width:50%;
+padding:10px;
+font-size:16px;
+border-radius:5px;
+border:1px solid gray;
+}
+
+/* LAYOUT */
+
+main{
+display:flex;
+padding:20px;
+}
+
+/* TOUR SECTION */
+
+section{
+width:70%;
+}
+
+.section-title{
+margin-bottom:20px;
+font-size:25px;
+color:#333;
+}
+
+/* TOUR GRID */
+
+.tour-list{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+/* TOUR CARD */
+
+.tour{
+border:1px solid #ddd;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s ease, box-shadow 0.3s ease;/* Thêm transition cho cả transform và box-shadow để tạo hiệu ứng mượt mà hơn khi hover */
+background:white;
+cursor:pointer;/* Thêm con trỏ pointer để người dùng biết rằng thẻ có thể nhấp được */
+}
+
+.tour img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.tour-content{
+padding:10px;
+}
+
+.tour h3{
+margin-bottom:10px;
+}
+
+.price{
+color:red;
+font-weight:bold;
+}
+
+/* HOVER EFFECT */
+
+.tour:hover{
+transform:translateY(-10px) scale(1.05);/* Nâng lên và phóng to nhẹ khi hover */
+box-shadow:0 10px 25px rgba(0,0,0,0.3);/* Thêm bóng đổ để tạo hiệu ứng nổi bật hơn khi hover */
+
+}
+
+/* SIDEBAR */
+
+aside{
+width:30%;
+padding:20px;
+margin-left:20px;
+background:#f2f2f2;
+border-radius:10px;
+margin-right: 40px;
+}
+
+aside h3{
+margin-bottom:10px;
+}
+
+aside ul{
+list-style:none;
+}
+
+aside li{
+padding:5px;
+border-bottom:1px solid #ddd;
+}
+
+/* FORM */
+
+.form-section{
+margin-top:40px;
+padding:20px;
+background:#f9f9f9;
+border-radius:10px;
+}
+
+form input,form select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid gray;
+}
+
+button{
+background:#00a86b;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#008f5a;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:40px;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
