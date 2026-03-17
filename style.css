@@ -48,6 +48,7 @@ text-align:center;
 position:sticky;
 top:100px;
 z-index:1000;
+
 }
 
 nav a{
@@ -59,6 +60,8 @@ font-size:18px;
 
 nav a:hover{
 color:yellow;
+background:blue;
+padding: 5px 10px;
 }
 
 /* SEARCH */
@@ -205,34 +208,41 @@ color:white;
 text-align:center;
 padding:20px;
 }
-@media (max-width:414px){
+/* RESPONSIVE MOBILE */
+
+@media (max-width:768px){
 
 /* header */
 header h1{
 font-size:20px;
-    padding-left:50px;
+padding-left: 50px;/* Thêm padding để tránh bị che khuất bởi logo */
 }
-header p{
-padding-left:40px;
-}
+
 .logo img{
 width:50px;
 height:50px;
+transition: ease-in-out 1s; /* Thêm transition để tạo hiệu ứng mượt mà khi thay đổi kích thước logo */
 }
-
+.logo{
+    top: 10px;
+    left: 10px;
+}
+header p{
+    padding-left: 40px;
+}
 /* menu */
 nav a{
 display:block;
 margin:10px 0;
 }
-nav{
-    top:80px;
-}
+
 /* search */
 .search input{
 width:90%;
 }
-
+nav{
+    top:80px;
+}
 /* layout chuyển thành cột */
 main{
 flex-direction:column;
