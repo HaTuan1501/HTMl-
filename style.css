@@ -1,82 +1,94 @@
-
 /* RESET */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial, sans-serif;
 }
 
 /* HEADER */
-
+.top-bar{
+position:sticky;
+top:0;
+z-index:1000;
+}
 header{
 background:linear-gradient(45deg,#0099ff,#00cc99);
 color:white;
 text-align:center;
 padding:20px;
-position:relative; /* Đặt header ở vị trí tương đối để logo có thể được đặt tuyệt đối bên trong nó */
 }
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
+
 .logo{
-   position: absolute;/* Đặt logo ở vị trí tuyệt đối để nó không ảnh hưởng đến bố cục của header */
-   width: 70px;
-   height: 70px;
-   top:15px;
+position:absolute;
+top:15px;
 left:15px;
 }
+
 .logo img{
 width:70px;
 height:70px;
-border-radius:50%;/* Cắt ảnh thành hình tròn */
-object-fit:cover; /* Đảm bảo ảnh không bị méo khi cắt thành hình tròn */
+border-radius:50%;
+object-fit:cover;
 }
+
+/* TITLE EFFECT */
 
 header h1{
 font-size:40px;
+background-image:linear-gradient(90deg,#00c6ff,#7b2ff7,#ff4ecd);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:shine 3s linear infinite;
 }
 
-/* MENU */
+@keyframes shine{
+0%{background-position:-200%;}
+100%{background-position:200%;}
+}
+
+/* NAVBAR */
 
 nav{
 background:#333;
 padding:15px;
 text-align:center;
-position:sticky;
-top:100px;
-z-index:1000;
-
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:20px;
+margin:0 15px;
 font-size:18px;
+transition:0.3s;
+}
+
+nav i{
+font-size:26px;
 }
 
 nav a:hover{
 color:yellow;
-background:blue;
-padding: 5px 10px;
+transform:translateY(-5px) scale(1.2);
 }
-
+main{
+    margin-top:160px;
+}
 /* SEARCH */
 
 .search{
-text-align:center;
-margin:20px;
+position:absolute;
+right:20px;
+top:50%;
+transform:translateY(-50%);
 }
 
 .search input{
-width:50%;
-padding:10px;
-font-size:16px;
+width:180px;
+padding:8px;
+font-size:14px;
 border-radius:5px;
-border:1px solid gray;
+border:1px solid #ccc;
 }
 
 /* LAYOUT */
@@ -84,6 +96,34 @@ border:1px solid gray;
 main{
 display:flex;
 padding:20px;
+max-width:1200px;
+margin:auto;
+}
+
+/* SIDEBAR */
+
+aside{
+width:30%;
+padding:20px;
+margin-right:20px;
+background:#f2f2f2;
+border-radius:10px;
+position:sticky;
+top:120px;
+height:fit-content;
+}
+
+aside h3{
+margin-bottom:10px;
+}
+
+aside ul{
+list-style:none;
+}
+
+aside li{
+padding:6px;
+border-bottom:1px solid #ddd;
 }
 
 /* TOUR SECTION */
@@ -98,74 +138,110 @@ font-size:25px;
 color:#333;
 }
 
-/* TOUR GRID */
+/* GRID TOUR */
 
 .tour-list{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 /* TOUR CARD */
 
 .tour{
-border:1px solid #ddd;
-border-radius:10px;
-overflow:hidden;
-transition:0.3s ease, box-shadow 0.3s ease;/* Thêm transition cho cả transform và box-shadow để tạo hiệu ứng mượt mà hơn khi hover */
 background:white;
-cursor:pointer;/* Thêm con trỏ pointer để người dùng biết rằng thẻ có thể nhấp được */
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
 }
 
-.tour img{
+.tour:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* IMAGE */
+
+.tour-img{
+position:relative;
+overflow:hidden;
+}
+
+.tour-img img{
 width:100%;
-height:180px;
+height:200px;
 object-fit:cover;
+transition:0.4s;
 }
 
-.tour-content{
-padding:10px;
+.tour:hover img{
+transform:scale(1.2);
 }
 
-.tour h3{
-margin-bottom:10px;
-}
+/* BADGE */
 
-.price{
-color:red;
+.badge{
+position:absolute;
+top:10px;
+left:10px;
+background:#ff3d3d;
+color:white;
+padding:5px 10px;
+font-size:13px;
+border-radius:5px;
 font-weight:bold;
 }
 
-/* HOVER EFFECT */
+/* CONTENT */
 
-.tour:hover{
-transform:translateY(-10px) scale(1.05);/* Nâng lên và phóng to nhẹ khi hover */
-box-shadow:0 10px 25px rgba(0,0,0,0.3);/* Thêm bóng đổ để tạo hiệu ứng nổi bật hơn khi hover */
-
+.tour-content{
+padding:15px;
 }
 
-/* SIDEBAR */
-
-aside{
-width:30%;
-padding:20px;
-margin-left:20px;
-background:#f2f2f2;
-border-radius:10px;
-margin-right: 40px;
+.tour-content h3{
+margin-bottom:8px;
+color:#333;
 }
 
-aside h3{
+/* RATING */
+
+.rating{
+color:#ffc107;
+margin-bottom:10px;
+font-size:14px;
+}
+
+.rating span{
+color:#333;
+margin-left:5px;
+}
+
+/* PRICE */
+
+.price{
+color:#ff5722;
+font-weight:bold;
+font-size:18px;
 margin-bottom:10px;
 }
 
-aside ul{
-list-style:none;
+/* BUTTON */
+
+.btn-book{
+display:inline-block;
+background:#00a86b;
+color:white;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+text-decoration:none;
+transition:0.3s;
 }
 
-aside li{
-padding:5px;
-border-bottom:1px solid #ddd;
+.btn-book:hover{
+background:#008f5a;
 }
 
 /* FORM */
@@ -177,7 +253,8 @@ background:#f9f9f9;
 border-radius:10px;
 }
 
-form input,form select{
+form input,
+form select{
 width:100%;
 padding:10px;
 margin:10px 0;
@@ -185,7 +262,7 @@ border-radius:5px;
 border:1px solid gray;
 }
 
-button{
+.form-section button{
 background:#00a86b;
 color:white;
 padding:10px;
@@ -195,7 +272,7 @@ font-size:16px;
 cursor:pointer;
 }
 
-button:hover{
+.form-section button:hover{
 background:#008f5a;
 }
 
@@ -208,61 +285,60 @@ color:white;
 text-align:center;
 padding:20px;
 }
-/* RESPONSIVE MOBILE */
+
+/* RESPONSIVE */
+
+@media (max-width:1024px){
+
+main{
+flex-direction:column;
+}
+
+section{
+width:100%;
+}
+
+aside{
+width:100%;
+margin-bottom:20px;
+position:static;
+}
+
+}
 
 @media (max-width:768px){
 
-/* header */
 header h1{
-font-size:20px;
-padding-left: 50px;/* Thêm padding để tránh bị che khuất bởi logo */
+font-size:28px;
 }
 
 .logo img{
 width:50px;
 height:50px;
-transition: ease-in-out 1s; /* Thêm transition để tạo hiệu ứng mượt mà khi thay đổi kích thước logo */
-}
-.logo{
-    top: 10px;
-    left: 10px;
-}
-header p{
-    padding-left: 40px;
-}
-/* menu */
-nav a{
-display:block;
-margin:10px 0;
 }
 
-/* search */
-.search input{
-width:90%;
-}
 nav{
-    top:80px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
 }
-/* layout chuyển thành cột */
+
+.search{
+position:static;
+transform:none;
+margin-top:10px;
+}
+
+.search input{
+width:100%;
+}
+
 main{
-flex-direction:column;
+padding:10px;
 }
 
-/* section full width */
-section{
-width:100%;
-}
-
-/* sidebar xuống dưới */
-aside{
-width:100%;
-margin-left:0;
-margin-top:20px;
-}
-
-/* tour grid 1 cột */
 .tour-list{
 grid-template-columns:1fr;
 }
-
 }
