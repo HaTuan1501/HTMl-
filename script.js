@@ -1,6 +1,5 @@
 
 /* SEARCH TOUR */
-window.alert("Chào mừng bạn đến với trang web quảng bá du lịch! Hãy khám phá những tour hấp dẫn của chúng tôi và đăng ký ngay hôm nay để có những trải nghiệm tuyệt vời!");
 let search = document.getElementById("search");
 
 search.addEventListener("keyup",function(){
