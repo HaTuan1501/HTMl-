@@ -37,3 +37,14 @@ form.reset();
 
 });
 
+let links = document.querySelectorAll("nav a");
+
+let currentPage = window.location.href;
+
+links.forEach(link => {
+
+if(currentPage.includes(link.getAttribute("href"))){
+link.classList.add("active");
+}
+
+});
