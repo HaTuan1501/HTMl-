@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour du lịch miền Trung</title>
+    <link rel="icon" type="image/x-icon" href="images/Gemini_Generated_Image_rvglborvglborvgl.png">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="script.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+   <div class="top-bar">
+        <header>
+             <div class="logo">
+         <img src="images/Gemini_Generated_Image_rvglborvglborvgl.png">
+    </div>
+   
+        <h1>DU LỊCH VIỆT NAM</h1> 
+        <p>Cùng nhau khám phá những địa điểm tuyệt vời</p>      
+    </header>
+    <nav>
+        
+        <a href="home.html"><i class="fa-solid fa-house" title="Home"></i></a>
+        <a href="tour.html"><i class="fa-solid fa-plane" title="Tours"></i></a>
+        <a href="register.html"><i class="fa-solid fa-registered" title="Register"></i></a>
+        <a href="contact.html"><i class="fa-solid fa-address-book" title="Contact"></i></a>
+        <a href="index.html"><i class="fa-regular fa-circle-user" title="Member"></i></a>
+         <div class="search">
+        <input type="text" id="search" placeholder="Tìm kiếm...">
+    </div>
+    </nav>
+   </div>
+    <main>
+    <aside class="sidebar">
+        <h3>Tour phổ biến</h3>
+
+<ul>
+<li><a href="tourMB.html" target="_blank">Tour du lịch các tỉnh miền Bắc</a></li>
+<li><a href="tourMN.html" target="_blank">Tour du lịch các tỉnh miền Nam</a></li>
+<li><a href="tour.html" target="_blank">Tour du lịch nổi bật</a></li>
+</ul>
+
+<h3 style="margin-top:20px;">Khuyến mãi</h3>
+
+<p>🔥 Giảm 20% tour Phú Quốc</p>
+<p>🔥 Giảm 15% tour Đà Lạt</p>
+<h3>Lọc giá</h3>
+<select id="priceFilter">
+    <option value="all">Tất cả</option>
+    <option value="3000000">Dưới 3 triệu</option>
+    <option value="4000000">Dưới 4 triệu</option>
+</select>
+    </aside>
+    
+    <section class="tour-list">
+
+<!-- 1 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?61"><span class="badge">-15%</span></div>
+<div class="tour-content"><h3>Đà Nẵng</h3><p>Thành phố đáng sống nhất Việt Nam</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div><p class="price">3.500.000 VNĐ</p><a href="register.html?name=Đà Nẵng&price=3500000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 2 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?62"><span class="badge">-10%</span></div>
+<div class="tour-content"><h3>Huế</h3><p>Cố đô cổ kính, đậm chất lịch sử</p><div class="rating">⭐⭐⭐⭐☆ <span>4.4</span></div><p class="price">3.000.000 VNĐ</p><a href="register.html?name=Huế&price=3000000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 3 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?63"><span class="badge">-20%</span></div>
+<div class="tour-content"><h3>Hội An</h3><p>Phố cổ lung linh về đêm</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.8</span></div><p class="price">3.200.000 VNĐ</p><a href="register.html?name=Hội An&price=3200000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 4 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?64"><span class="badge">-12%</span></div>
+<div class="tour-content"><h3>Nha Trang</h3><p>Biển xanh cát trắng</p><div class="rating">⭐⭐⭐⭐☆ <span>4.5</span></div><p class="price">3.300.000 VNĐ</p><a href="register.html?name=Nha Trang&price=3300000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 5 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?65"><span class="badge">-10%</span></div>
+<div class="tour-content"><h3>Quy Nhơn</h3><p>Biển hoang sơ tuyệt đẹp</p><div class="rating">⭐⭐⭐⭐☆ <span>4.4</span></div><p class="price">3.100.000 VNĐ</p><a href="register.html?name=Quy Nhơn&price=3100000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 6 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?66"><span class="badge">-8%</span></div>
+<div class="tour-content"><h3>Phú Yên</h3><p>Xứ hoa vàng trên cỏ xanh</p><div class="rating">⭐⭐⭐⭐☆ <span>4.3</span></div><p class="price">2.900.000 VNĐ</p><a href="register.html?name=Phú Yên&price=2900000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 7 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?67"><span class="badge">-10%</span></div>
+<div class="tour-content"><h3>Quảng Bình</h3><p>Hang Sơn Đoòng kỳ vĩ</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.9</span></div><p class="price">4.800.000 VNĐ</p><a href="register.html?name=Quảng Bình&price=4800000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 8 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?68"><span class="badge">-7%</span></div>
+<div class="tour-content"><h3>Quảng Trị</h3><p>Vùng đất lịch sử</p><div class="rating">⭐⭐⭐⭐☆ <span>4.2</span></div><p class="price">2.700.000 VNĐ</p><a href="register.html?name=Quảng Trị&price=2700000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 9 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?69"><span class="badge">-10%</span></div>
+<div class="tour-content"><h3>Quảng Nam</h3><p>Văn hóa & di sản đặc sắc</p><div class="rating">⭐⭐⭐⭐☆ <span>4.4</span></div><p class="price">3.000.000 VNĐ</p><a href="register.html?name=Quảng Nam&price=3000000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 10 -->
+<div class="tour">
+<div class="tour-img"><img src="https://picsum.photos/300/200?70"><span class="badge">-15%</span></div>
+<div class="tour-content"><h3>Bình Định</h3><p>Võ cổ truyền & biển đẹp</p><div class="rating">⭐⭐⭐⭐☆ <span>4.3</span></div><p class="price">3.200.000 VNĐ</p><a href="register.html?name=Bình Định&price=3200000"><button class="btn-book">Đặt ngay</button></a></div>
+</div>
+
+<!-- 11 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?71"><span class="badge">-10%</span></div><div class="tour-content"><h3>Khánh Hòa</h3><p>Du lịch biển nổi tiếng</p><div class="rating">⭐⭐⭐⭐☆ <span>4.4</span></div><p class="price">3.300.000 VNĐ</p><a href="register.html?tour=Khánh Hòa&price=3300000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 12 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?72"><span class="badge">-8%</span></div><div class="tour-content"><h3>Ninh Thuận</h3><p>Sa mạc & vườn nho</p><div class="rating">⭐⭐⭐⭐☆ <span>4.2</span></div><p class="price">2.800.000 VNĐ</p><a href="register.html?tour=Ninh Thuận&price=2800000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 13 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?73"><span class="badge">-10%</span></div><div class="tour-content"><h3>Bình Thuận</h3><p>Mũi Né - đồi cát bay</p><div class="rating">⭐⭐⭐⭐☆ <span>4.3</span></div><p class="price">3.000.000 VNĐ</p><a href="register.html?tour=Bình Thuận&price=3000000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 14 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?74"><span class="badge">-7%</span></div><div class="tour-content"><h3>Thanh Hóa</h3><p>Biển Sầm Sơn</p><div class="rating">⭐⭐⭐⭐☆ <span>4.1</span></div><p class="price">2.600.000 VNĐ</p><a href="register.html?tour=Thanh Hóa&price=2600000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 15 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?75"><span class="badge">-9%</span></div><div class="tour-content"><h3>Nghệ An</h3><p>Quê hương Bác Hồ</p><div class="rating">⭐⭐⭐⭐☆ <span>4.2</span></div><p class="price">2.700.000 VNĐ</p><a href="register.html?tour=Nghệ An&price=2700000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 16 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?76"><span class="badge">-10%</span></div><div class="tour-content"><h3>Hà Tĩnh</h3><p>Biển Thiên Cầm</p><div class="rating">⭐⭐⭐⭐☆ <span>4.0</span></div><p class="price">2.600.000 VNĐ</p><a href="register.html?tour=Hà Tĩnh&price=2600000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 18 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?78"><span class="badge">-10%</span></div><div class="tour-content"><h3>Cù Lao Chàm</h3><p>Lặn biển ngắm san hô</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div><p class="price">3.200.000 VNĐ</p><a href="register.html?tour=Cù Lao Chàm&price=3200000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 19 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?79"><span class="badge">-8%</span></div><div class="tour-content"><h3>Đèo Hải Vân</h3><p>Cung đường đẹp nhất Việt Nam</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.6</span></div><p class="price">2.900.000 VNĐ</p><a href="register.html?tour=Đèo Hải Vân&price=2900000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 20 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?80"><span class="badge">-10%</span></div><div class="tour-content"><h3>Bà Nà Hills</h3><p>Cầu Vàng nổi tiếng</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.8</span></div><p class="price">3.800.000 VNĐ</p><a href="register.html?tour=Bà Nà Hills&price=3800000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 21 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?81"><span class="badge">-10%</span></div><div class="tour-content"><h3>Phong Nha</h3><p>Di sản thiên nhiên thế giới</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div><p class="price">4.000.000 VNĐ</p><a href="register.html?tour=Phong Nha&price=4000000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 22 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?82"><span class="badge">-7%</span></div><div class="tour-content"><h3>Đồng Hới</h3><p>Biển đẹp yên bình</p><div class="rating">⭐⭐⭐⭐☆ <span>4.2</span></div><p class="price">2.800.000 VNĐ</p><a href="register.html?tour=Đồng Hới&price=2800000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 23 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?83"><span class="badge">-10%</span></div><div class="tour-content"><h3>Tam Kỳ</h3><p>Biển Tam Thanh độc đáo</p><div class="rating">⭐⭐⭐⭐☆ <span>4.1</span></div><p class="price">2.700.000 VNĐ</p><a href="register.html?tour=Tam Kỳ&price=2700000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 24 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?84"><span class="badge">-9%</span></div><div class="tour-content"><h3>Sa Huỳnh</h3><p>Bãi biển hoang sơ</p><div class="rating">⭐⭐⭐⭐☆ <span>4.0</span></div><p class="price">2.600.000 VNĐ</p><a href="register.html?tour=Sa Huỳnh&price=2600000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 25 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?85"><span class="badge">-10%</span></div><div class="tour-content"><h3>Đảo Bình Ba</h3><p>Thiên đường tôm hùm</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.6</span></div><p class="price">3.600.000 VNĐ</p><a href="register.html?tour=Đảo Bình Ba&price=3600000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 26 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?86"><span class="badge">-8%</span></div><div class="tour-content"><h3>Đảo Bình Hưng</h3><p>Biển xanh trong vắt</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div><p class="price">3.500.000 VNĐ</p><a href="register.html?tour=Đảo Bình Hưng&price=3500000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 27 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?87"><span class="badge">-10%</span></div><div class="tour-content"><h3>Đảo Bình Lập</h3><p>Maldives Việt Nam</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.6</span></div><p class="price">3.700.000 VNĐ</p><a href="register.html?tour=Đảo Bình Lập&price=3700000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 28 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?88"><span class="badge">-12%</span></div><div class="tour-content"><h3>Vân Phong</h3><p>Vịnh biển hoang sơ</p><div class="rating">⭐⭐⭐⭐⭐ <span>4.7</span></div><p class="price">3.600.000 VNĐ</p><a href="register.html?tour=Vân Phong&price=3600000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 29 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?89"><span class="badge">-10%</span></div><div class="tour-content"><h3>Đầm Lập An</h3><p>Cảnh đẹp như tranh</p><div class="rating">⭐⭐⭐⭐☆ <span>4.3</span></div><p class="price">2.900.000 VNĐ</p><a href="register.html?tour=Đầm Lập An&price=2900000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+<!-- 30 -->
+<div class="tour"><div class="tour-img"><img src="https://picsum.photos/300/200?90"><span class="badge">-15%</span></div><div class="tour-content"><h3>Biển Nhật Lệ</h3><p>Bãi biển đẹp Quảng Bình</p><div class="rating">⭐⭐⭐⭐☆ <span>4.4</span></div><p class="price">2.800.000 VNĐ</p><a href="register.html?tour=Biển Nhật Lệ&price=2800000"><button class="btn-book">Đặt ngay</button></a></div></div>
+
+</section>
+</main>
+   <footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LOGO + GIỚI THIỆU -->
+    <div class="footer-col">
+      <h3>🌏 Du Lịch Việt Nam</h3>
+      <p>
+        Website cung cấp thông tin và đặt tour du lịch nhanh chóng,
+        tiện lợi và hiện đại.
+      </p>
+    </div>
+
+    <!-- LINK NHANH -->
+    <div class="footer-col">
+      <h3>🔗 Liên kết</h3>
+      <ul>
+        <li><a href="home.html">Trang chủ</a></li>
+        <li><a href="tour.html">Tours</a></li>
+        <li><a href="register.html">Đăng ký</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </div>
+
+    <!-- LIÊN HỆ -->
+    <div class="footer-col">
+      <h3>📞 Liên hệ</h3>
+      <p>Email: support@dulich.vn</p>
+      <p>Phone: 0123 456 789</p>
+      <p>Địa chỉ: Việt Nam</p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-col">
+      <h3>🌐 Kết nối</h3>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Team Development | All Rights Reserved</p>
+  </div>
+
+</footer>
+</body>
+</html>
