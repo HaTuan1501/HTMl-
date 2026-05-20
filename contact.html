@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -250,4 +251,256 @@
 <script src="javascript/contact.js"></script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Liên hệ</title>
+
+<link rel="icon" type="image/x-icon" href="images/Gemini_Generated_Image_rvglborvglborvgl.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ===== CONTACT ===== */
+.contact-container{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== FORM ===== */
+.contact-form{
+    flex: 2;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.contact-form:hover{
+    transform: translateY(-5px);
+}
+
+.contact-form h2{
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37,99,235,0.3);
+}
+
+/* button đẹp hơn */
+.contact-form button{
+    background: linear-gradient(90deg,#2563eb,#7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    transform: scale(1.08);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== INFO ===== */
+.contact-info{
+    flex: 1;
+    background: linear-gradient(135deg,#1e293b,#0f172a);
+    color: white;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.contact-info h3{
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    margin: 12px 0;
+}
+
+/* icon */
+.contact-info i{
+    color: #38bdf8;
+    margin-right: 10px;
+}
+
+/* ===== SOCIAL ICON ===== */
+.social{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #334155;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+    background: #2563eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 900px){
+    .contact-container{
+        flex-direction: column;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-bar">
+
+<header>
+<div class="logo">
+<img src="images/Gemini_Generated_Image_rvglborvglborvgl.png">
+</div>
+
+<h1>DU LỊCH VIỆT NAM</h1>
+<p>Cùng nhau khám phá những địa điểm tuyệt vời</p>
+</header>
+
+<nav>
+<a href="home.html"><i class="fa-solid fa-house"></i></a>
+<a href="tour.html"><i class="fa-solid fa-plane"></i></a>
+<a href="register.html"><i class="fa-solid fa-registered"></i></a>
+<a href="contact.html"><i class="fa-solid fa-address-book"></i></a>
+<a href="index.html"><i class="fa-regular fa-circle-user" title="Member"></i></a>
+<div class="search">
+<input type="text" placeholder="Tìm kiếm...">
+</div>
+</nav>
+
+</div>
+
+<main class="contact-container">
+
+<!-- FORM -->
+<div class="contact-form">
+<h2><i class="fa-solid fa-envelope"></i> Liên hệ với chúng tôi</h2>
+
+<form>
+<input type="text" placeholder="Họ và tên" required>
+<input type="email" placeholder="Email" required>
+<input type="text" placeholder="Số điện thoại">
+<textarea rows="5" placeholder="Nội dung..."></textarea>
+
+<button type="submit"><i class="fa-solid fa-paper-plane"></i> Gửi liên hệ</button>
+</form>
+</div>
+
+<!-- INFO -->
+<div class="contact-info">
+<h3><i class="fa-solid fa-circle-info"></i> Thông tin</h3>
+
+<p><i class="fa-solid fa-location-dot"></i> Việt Nam</p>
+<p><i class="fa-solid fa-phone"></i> 0123 456 789</p>
+<p><i class="fa-solid fa-envelope"></i> dulich@gmail.com</p>
+
+<h3 style="margin-top:20px;">Kết nối với chúng tôi</h3>
+
+<div class="social">
+<a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+<a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+<a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</div>
+
+</div>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LOGO + GIỚI THIỆU -->
+    <div class="footer-col">
+      <h3>🌏 Du Lịch Việt Nam</h3>
+      <p>
+        Website cung cấp thông tin và đặt tour du lịch nhanh chóng,
+        tiện lợi và hiện đại.
+      </p>
+    </div>
+
+    <!-- LINK NHANH -->
+    <div class="footer-col">
+      <h3>🔗 Liên kết</h3>
+      <ul>
+        <li><a href="home.html">Trang chủ</a></li>
+        <li><a href="tour.html">Tours</a></li>
+        <li><a href="register.html">Đăng ký</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </div>
+
+    <!-- LIÊN HỆ -->
+    <div class="footer-col">
+      <h3>📞 Liên hệ</h3>
+      <p>Email: support@dulich.vn</p>
+      <p>Phone: 0123 456 789</p>
+      <p>Địa chỉ: Việt Nam</p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-col">
+      <h3>🌐 Kết nối</h3>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Team Development | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+</body>
+>>>>>>> 472099a3019fad88cd929fd528c6196db8da19a2
 </html>
