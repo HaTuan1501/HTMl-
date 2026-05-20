@@ -423,6 +423,11 @@ font-size:18px;
 height:160px;
 }
 
+.logo img{
+width:70px;
+height:70px;
+margin-top:-10px;
+}
 }
 /* ===== REGISTER  ===== */
 
