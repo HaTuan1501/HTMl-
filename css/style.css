@@ -407,7 +407,7 @@ grid-template-columns:1fr;
 
 }
 
-@media (max-width:428px){
+@media (max-width:480px){
 
 header h1{
 font-size:22px;
@@ -424,9 +424,9 @@ height:160px;
 }
 
 .logo img{
-width:70px;
-height:70px;
-margin-top:-10px;
+width:40px;
+height:40px;
+margin-top:-15px;
 }
 }
 /* ===== REGISTER  ===== */
