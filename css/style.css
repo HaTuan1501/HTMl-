@@ -285,6 +285,20 @@ cursor:pointer;
 background:#008f5a;
 }
 
+/* button chi tiết */
+.btn-details{
+background:#2563eb;
+color:white;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.btn-details:hover{
+background:#1d4ed8;
+}
+
 /* SLIDER */
 .swiper{
 width:100%;
@@ -368,6 +382,7 @@ font-size:28px;
 .logo img{
 width:70px;
 height:70px;
+margin-top:-10px;
 }
 
 nav{
@@ -691,4 +706,4 @@ padding:15px;
 font-size:14px;
 color:#94a3b8;
 }
-/* tour */
+
